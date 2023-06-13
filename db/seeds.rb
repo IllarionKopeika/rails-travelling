@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-Region.create(name: 'Asia', image: 'https://www.pngplay.com/wp-content/uploads/6/Asia-Map-Gradient-PNG.png')
-Region.create(name: 'Europe', image: 'https://e7.pngegg.com/pngimages/810/128/png-clipart-united-kingdom-map-globe-europe-world-map.png')
-Region.create(name: 'Africa', image: 'https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663136566_2-mykaleidoscope-ru-p-afrika-kontinent-pinterest-2.jpg')
+Region.create(name: 'Europe', image: 'https://img5.goodfon.ru/original/1024x768/2/5c/abstraktsiia-windows-evropa-chast-sveta.jpg')
+Region.create(name: 'Asia', image: 'https://img5.goodfon.ru/original/640x480/0/33/abstraktsiia-windows-chast-sveta-aziia.jpg')
+Region.create(name: 'Africa', image: 'https://img5.goodfon.ru/original/640x480/b/4b/afrika-kontinent-abstraktsiia-windows.jpg')
+Region.create(name: 'Australia', image: 'https://img5.goodfon.com/original/2880x900/1/27/abstraktsiia-windows-kontinent-avstraliia.jpg')
+Region.create(name: 'North America', image: 'https://img5.goodfon.com/original/800x480/8/21/abstraktsiia-windows-kontinent-severnaia-amerika.jpg')
+Region.create(name: 'South America', image: 'https://img5.goodfon.ru/original/640x480/a/b8/abstraktsiia-windows-kontinent-iuzhnaia-amerika.jpg')
