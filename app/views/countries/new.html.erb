@@ -1,0 +1,10 @@
+<%= simple_form_for [@region, @country] do |f| %>
+  <%= f.association :region %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :flag %>
+  <%= f.text_field :flag %>
+  <%= f.submit %>
+  <%= f.button :submit, 'Do it!', class: "btn btn-secondary"%>
+  <a href="/regions" class="btn btn-dark">Back</a>
+<% end %>
