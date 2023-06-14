@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   root to: 'regions#index'
   get 'regions', to: 'regions#index'
-  get 'regions/:id', to: 'regions#show'
+  get 'regions/:id', to: 'regions#show', as: 'region'
 end
