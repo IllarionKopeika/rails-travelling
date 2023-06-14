@@ -13,7 +13,3 @@ Region.create(name: 'Africa', image: 'https://img5.goodfon.ru/original/640x480/b
 Region.create(name: 'Australia', image: 'https://img5.goodfon.com/original/2880x900/1/27/abstraktsiia-windows-kontinent-avstraliia.jpg')
 Region.create(name: 'North America', image: 'https://img5.goodfon.com/original/800x480/8/21/abstraktsiia-windows-kontinent-severnaia-amerika.jpg')
 Region.create(name: 'South America', image: 'https://img5.goodfon.ru/original/640x480/a/b8/abstraktsiia-windows-kontinent-iuzhnaia-amerika.jpg')
-
-Country.create(name: 'Nepal')
-Country.create(name: 'China')
-Country.create(name: 'Russia')

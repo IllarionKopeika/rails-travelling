@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_14_030308) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_14_042656) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -27,6 +27,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_14_030308) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "flag"
+    t.bigint "region_id", null: false
+    t.index ["region_id"], name: "index_countries_on_region_id"
   end
 
   create_table "regions", force: :cascade do |t|
@@ -49,6 +51,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_14_030308) do
   end
 
   add_foreign_key "cities", "countries"
+  add_foreign_key "countries", "regions"
   add_foreign_key "trips", "countries"
   add_foreign_key "trips", "regions"
 end
