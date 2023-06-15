@@ -1,7 +1,9 @@
-<%= form_with model: @country do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :flag %>
-  <%= f.text_field :flag %>
-  <%= f.submit %>
-<% end %>
+<div style="display: d-block; justify-content: center;">
+  <%= form_with model: @country do |f| %>
+    <label style="color: rgb(39,55,77); font-weight: 700; font-size: 24px; font-family: 'ZCOOL XiaoWei';">Country</label>
+    <%= f.text_field :name %>
+    <label style="color: rgb(39,55,77); font-weight: 700; font-size: 24px; font-family: 'ZCOOL XiaoWei';">Flag</label>
+    <%= f.text_field :flag %>
+    <%= f.submit %>
+  <% end %>
+</div>
