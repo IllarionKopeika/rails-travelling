@@ -1,16 +1,12 @@
 class CountriesController < ApplicationController
   def new
     @country = Country.new
-    @region = Region.find(params[:region_id])
   end
 
   def create
-    @region = Region.find(params[:region_id])
     @country = Country.new(country_params)
-    @country.region = @region
-
     if @country.save
-      redirect_to region_path(@region)
+      redirect_to root_path
     else
       render 'new', status: :unprocessable_entity
     end
@@ -19,6 +15,6 @@ class CountriesController < ApplicationController
   private
 
   def country_params
-    params.require(:country).permit(:name, :flag, :region_id)
+    params.require(:country).permit(:name, :flag)
   end
 end

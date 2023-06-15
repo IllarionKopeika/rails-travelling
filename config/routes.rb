@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   root to: 'regions#index'
   get 'regions', to: 'regions#index'
   get 'regions/:id', to: 'regions#show', as: 'region'
+
+  get 'countries/new', to: 'countries#new'
+  post 'countries', to: 'countries#create'
 end
