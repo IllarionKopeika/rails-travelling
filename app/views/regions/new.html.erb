@@ -1,28 +1,28 @@
-<h1 style="color: rgb(39,55,77); text-align: center; margin-top: 120px; font-weight: 700; font-size: 36px; font-family: 'ZCOOL XiaoWei';">We've just visited...</h1>
+<h1 style="color: rgb(39,55,77); text-align: center; margin-top: 120px; font-weight: 700; font-size: 36px; font-family: 'ZCOOL XiaoWei';">Let's save a beautiful memory abour our last trip</h1>
 <div style="display: flex; justify-content: center; margin-top: 30px;">
   <div style="display: flex; justify-content: center; background-color: rgb(221, 230, 237); border: 1px solid rgb(39, 55, 77); border-radius: 5px; box-shadow: 0 0 5px rgb(39,55,77); width: 700px; height: 400px; padding: 30px  30px;">
-    <%= form_with model: @country do |f| %>
-      <% if @country.errors.any? %>
+    <%= form_with model: @region do |f| %>
+      <% if @region.errors.any? %>
         <div role="alert">
-          Could not create a country due to the following issues:
+          Could not create a trip due to the following issues:
           <ul>
-            <% @country.errors.each do |error| %>
+            <% @region.errors.each do |error| %>
               <li><%= error.full_message %></li>
             <% end %>
           </ul>
         </div>
       <% end %>
       <div style="margin-top: 50px;">
-        <label style="color: rgb(39,55,77); font-weight: 600; font-size: 24px; font-family: 'ZCOOL XiaoWei';">Country</label>
+        <label style="color: rgb(39,55,77); font-weight: 600; font-size: 24px; font-family: 'ZCOOL XiaoWei';">Name</label>
       </div>
       <div>
-        <%= f.text_field :name, class: "form-control", placeholder: "We went to..."%>
+        <%= f.text_field :name, class: "form-control", placeholder: "A for adventure"%>
       </div>
       <div style="margin-top: 10px;">
-        <label style="color: rgb(39,55,77); font-weight: 600; font-size: 24px; font-family: 'ZCOOL XiaoWei';">Flag</label>
+        <label style="color: rgb(39,55,77); font-weight: 600; font-size: 24px; font-family: 'ZCOOL XiaoWei';">Image</label>
       </div>
       <div>
-        <%= f.text_field :flag, class: "form-control", placeholder: "Paste a link..." %>
+        <%= f.text_field :image, class: "form-control", placeholder: "Paste a link..." %>
       </div>
       <div style="margin-top: 15px;">
         <%= f.submit class: "btn btn-lg", style: "font-weight: 400; font-size: 20px; font-family: 'ZCOOL XiaoWei'; color: white; background-color: rgb(39, 55, 77); border: 1px solid rgb(39, 55, 77); border-radius: 5px;" %>

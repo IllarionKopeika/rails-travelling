@@ -1,7 +1,7 @@
 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; margin-top: 10px;">
   <% @regions.each do |region| %>
-    <div style="background-image: url('<%= region.image %>'); font-family: 'ZCOOL XiaoWei', sans-serif; display: flex; font-weight: 400; align-items: center; justify-content: center; padding: 100px; background-size: cover; background-position: center; border-radius: 5px; height: 300px; font-size: 40px; text-shadow: 2px 2px 4px whitesmoke; box-shadow: 0 0 5px rgb(1,1,1); margin: 10px 10px">
-      <h1 style="text-decoration: none; color: rgb(149,0,255)"><%= link_to region.name, region_path(region) %></h1>
+    <div style="background-image: url('<%= region.image %>'); color: rgb(39,55,77); font-weight: 700; font-size: 32px; font-family: 'ZCOOL XiaoWei'; display: flex; align-items: center; justify-content: center; padding: 100px; background-size: cover; background-position: center; border-radius: 5px; height: 300px; text-shadow: 2px 2px 4px black; box-shadow: 0 0 5px rgb(1,1,1); margin: 10px 10px">
+      <h1 style="text-decoration: none;"><%= link_to region.name, region_path(region) %></h1>
     </div>
   <% end %>
 </div>
