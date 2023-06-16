@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   # root "articles#index"
   root to: 'regions#index'
   resources :regions, only: %i[index show new create] do
-    resources :trips, only: %i[new create]
+    get 'trips/new', to: 'trips#new'
+    post 'trips', to: 'trips#create'
   end
 
   get 'countries/new', to: 'countries#new'
